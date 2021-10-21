@@ -19,7 +19,7 @@ class CarPredictionModel():
 class UsedcarPricePredictor():
     
     def __init__(self):
-        self.model = joblib.load('https://github.com/manaranjanp/usedcarprice/blob/main/usedcar/carmodel.pkl')
+        self.model = joblib.load('https://drive.google.com/uc?export=download&id=1ERBiTlvs2WOfVUOCPD90fOm7kiHgK_Rf')
         
     def predict(self, 
                 km_driven, 
