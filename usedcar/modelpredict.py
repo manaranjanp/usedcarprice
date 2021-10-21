@@ -12,9 +12,7 @@ warnings.filterwarnings('ignore')
 
 model_path = 'https://github.com/manaranjanp/usedcarprice/blob/main/usedcar/carmodel.pkl?raw=true'
         
-class UsedcarPricePredictor():
-        
-    from usedcar import CarPredictionModel as CarPredictionModel        
+class UsedcarPricePredictor():              
         
     def __init__(self):
         model_file = BytesIO(requests.get(model_path).content)
@@ -53,3 +51,6 @@ class UsedcarPricePredictor():
         df = pd.DataFrame(car_data, index = [0])
         
         return np.round(self.model.pipeline.predict(df)[0], 2)
+
+   if __name__ == "__main__":
+      from usedcar import CarPredictionModel as CarPredictionModel 
