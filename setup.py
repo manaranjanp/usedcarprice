@@ -8,6 +8,6 @@ setuptools.setup(
     description='Predicting the price of an used car',
     url='https://github.com/manaranjanp/usedcarprice',
     license='MIT',
-    packages=['usedcarprice'],
+    packages=['usedcar'],
     install_requires=['xgboost>=0.90', 'scikit-learn>=0.22.2']
 )
