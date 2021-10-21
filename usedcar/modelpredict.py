@@ -7,7 +7,7 @@ import joblib
 import warnings
 from io import BytesIO
 import requests
-import CarPredictionModel
+from carmodel import CarPredictionModel
 warnings.filterwarnings('ignore')
 
 model_path = 'https://github.com/manaranjanp/usedcarprice/blob/main/usedcar/carmodel.pkl?raw=true'
