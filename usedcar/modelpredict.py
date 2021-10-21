@@ -52,5 +52,5 @@ class UsedcarPricePredictor():
         
         return np.round(self.model.pipeline.predict(df)[0], 2)
 
-   if __name__ == "__main__":
-      from usedcar import CarPredictionModel as CarPredictionModel 
+if __name__ == "__main__":
+   from usedcar import CarPredictionModel as CarPredictionModel 
