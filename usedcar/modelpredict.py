@@ -10,17 +10,17 @@ import requests
 warnings.filterwarnings('ignore')
 
 model_path = 'https://github.com/manaranjanp/usedcarprice/blob/main/usedcar/carmodel.pkl?raw=true'
-
-class CarPredictionModel():
-    
-    def __init__(self, pipeline, all_features, cat_features, num_features, rmse):
-        self.pipeline = pipeline
-        self.all_features = all_features
-        self.cat_features = cat_features
-        self.num_features = num_features
-        self.rmse = rmse
         
 class UsedcarPricePredictor():
+    
+    class CarPredictionModel():
+    
+        def __init__(self, pipeline, all_features, cat_features, num_features, rmse):
+            self.pipeline = pipeline
+            self.all_features = all_features
+            self.cat_features = cat_features
+            self.num_features = num_features
+            self.rmse = rmse
     
     def __init__(self):
         model_file = BytesIO(requests.get(model_path).content)
