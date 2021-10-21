@@ -14,6 +14,8 @@ model_path = 'https://github.com/manaranjanp/usedcarprice/blob/main/usedcar/carm
         
 class UsedcarPricePredictor():
         
+    from usedcar import CarPredictionModel as CarPredictionModel        
+        
     def __init__(self):
         model_file = BytesIO(requests.get(model_path).content)
         self.model = joblib.load(model_file)
