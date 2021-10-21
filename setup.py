@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='usedcar',
-    version='0.0.8',
+    version='0.0.9',
     author='Manaranjan Pradhan',
     author_email='manaranjan@gmail.com',
     description='Predicting the price of an used car',
