@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='usedcarprice',
+    name='usedcar',
     version='0.0.1',
     author='Manaranjan Pradhan',
     author_email='manaranjan@gmail.com',
