@@ -9,5 +9,5 @@ setuptools.setup(
     url='https://github.com/manaranjanp/usedcarprice',
     license='MIT',
     packages=['usedcarprice'],
-    install_requires=['xgboost>=0.90', 'sklearn>=0.22.2'],
+    install_requires=['xgboost>=0.90', 'scikit-learn>=0.22.2']
 )
