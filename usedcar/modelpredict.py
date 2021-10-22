@@ -25,7 +25,7 @@ class UsedcarPricePredictor():
                 transmission = 'Manual',
                 owner = 'First',
                 seats = 4,
-                make = 'hyundai',
+                make = 'maruti',
                 model = 'swift',
                 mileage = 10.0,
                 engine = 800.0,
