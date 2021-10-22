@@ -23,7 +23,7 @@ class UsedcarPricePredictor():
                 fuel_type = 'Petrol',
                 age = 1,
                 transmission = 'Manual',
-                owner = 'First,
+                owner = 'First',
                 seats = 4,
                 make = 'hyundai',
                 model = 'swift',
