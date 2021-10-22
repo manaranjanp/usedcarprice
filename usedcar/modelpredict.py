@@ -19,18 +19,40 @@ class UsedcarPricePredictor():
         self.model = joblib.load(model_file)
         
     def predict(self, 
-                km_driven, 
-                fuel_type,
-                age,
-                transmission,
-                owner,
-                seats,
-                make,
-                model,
-                mileage,
-                engine,
-                power,
-                location):
+                km_driven = 1.0, 
+                fuel_type = 'Petrol',
+                age = 1,
+                transmission = 'Manual',
+                owner = 'First,
+                seats = 4,
+                make = 'hyundai',
+                model = 'swift',
+                mileage = 10.0,
+                engine = 800.0,
+                power = 85.0,
+                location = 'Bangalore'):
+
+        """
+        Predicts the price of an used car given it's attributes.
+  
+        Parameters:
+            km_driven (float): Kilometer driven by the car (odometer reading) in 1000 kms. E.g. 5.5 indicates 5500 km. driven.
+            fuel_type (str): 'Petrol' or 'Diesel': Default is 'Petrol'
+            age: (int): Number of years since car is bought.
+            transmission (str): 'Manual' or 'Automatic': Default is 'Manual'
+            owner (str): 'First' or 'Second' or 'Third'. Default is 'First'
+            seats (int): Number of seats. Default is 4.
+            make (str): Currently it supports only 'maruti' or 'hyundai'. Default is 'maruti'.
+            model (str): 'alto' or 'swift' or 'desire' or 'zen'. Default is 'swift'
+            mileage (float): Mileage of the car in km per liter. Default is 10.0
+            engine (float): Engine capacity of the car in cc. Default is 800.0 cc.
+            power (float): Power of the car in bhp. Default is 85.0 bhp. 
+            location (str): Which location the car is available for the sell. 'Bangalore' or 'Hyderabad' or 'Mumbai' or 'Chennai'. Default is 'Bangalore'
+            
+          
+        Returns:
+            float: The expected sale price of the car in INR Lakhs. For example, 8.5 means the car is expected to be sold at INR 8.5 lakhs.
+        """
         
         car_data = {}
         
